@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les chenilles 🐛</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/source/emoji-one/72/bug_1f41b.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script language="javascript" src="js/tmdp-v1.3.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+              
+              <img src="https://em-content.zobj.net/source/emoji-one/72/bug_1f41b.png" class="logo" />&nbsp;
+              <h1>Les mots de passe en informatique</h1>
+            <ul>
+              <li>
+                <a href="/index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-paperclip"></i>&nbsp;Services</a>
+              </li>
+              <li>
+                <a href="/contact.html"><i class="fa-solid fa-envelope"></i> &nbsp;Contactez-nous</a>
+              </li>
+            </ul>
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+        
+          </nav>
+          <div class="menubar">
+            <ul>
+              <li>
+                <a href="/index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-paperclip"></i>&nbsp;Services</a>
+              </li>
+              <li>
+                <a href="/contact.html"><i class="fa-solid fa-envelope"></i> &nbsp;Contactez-nous</a>
+              </li>
+              <li>
+                <a class="close"><i class="fa-solid fa-circle-xmark"></i> &nbsp;Fermer le menu</a>
+              </li>
+            </ul>
+            
+          </div>
+      
+
+          <script src="js/script.js"></script>
+    
+    </header>
+<main>
+    <section>
+            <article>
+              <p>Les mots de passe sont analysés directement dans votre navigateur, sans être jamais envoyés au serveur, garantissant ainsi votre confidentialité.</p>
+              <p>En outre, le site n'a aucune information sur les comptes auxquels vos mots de passe sont associés.</p>
+                 <div class="password-generator">
+                    <button onclick="generatePassword()">Générer un mot de passe sécurisé &nbsp;<i class="fa-solid fa-lock"></i></button>
+                    <div id="returnPassword" style="width: 50%; margin: 25px auto;"></div>
+                </div>
+            </article>
+    
+             <article id="checkPassword">   
+                <h2>Évaluez la solidité de votre mot de passe&nbsp; <i class="fa-solid fa-check"></i></h2>
+                En cours de creation...
+            </article>
+          </section>
+</main>
+    
+    
+
+<footer id="servicesFooter">
+  <h3>Créé par Thomas 🐛 &nbsp; <a href="https://github.com/fuzeblocks/" class="social-icon" target="_blank" >  <i class="fa-brands fa-github" style="color: white;"></i>  </a> </h3>
+</footer>
+</body>
+<script>
+    function generatePassword() {
+        fetch('https://api.motdepasse.xyz/create/?include_digits&include_lowercase&include_special_characters&include_uppercase&password_length=32&quantity=1')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('returnPassword');
+                container.innerHTML = data.passwords ? `<p>${data.passwords[0]}</p>` : 'Erreur lors de la génération.';
+            })
+            .catch(() => {
+                document.getElementById('returnPassword').innerHTML = 'Une erreur est survenue.';
+            });
+    }
+</script>
+
+</html>

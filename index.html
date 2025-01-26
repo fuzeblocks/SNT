@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les mots de passe en informatique</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="https://em-content.zobj.net/source/emoji-one/72/bug_1f41b.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://em-content.zobj.net/source/emoji-one/72/bug_1f41b.png" class="logo" alt="Logo">
+            <h1>Les mots de passe en informatique</h1>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="/services.html"><i class="fa-solid fa-paperclip"></i> Services</a></li>
+                <li><a href="/contact.html"><i class="fa-solid fa-envelope"></i> Contactez-nous</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </nav>
+        <div class="menubar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="/services.html"><i class="fa-solid fa-paperclip"></i> Services</a></li>
+                <li><a href="/contact.html"><i class="fa-solid fa-envelope"></i> Contactez-nous</a></li>
+                <li><a class="close"><i class="fa-solid fa-circle-xmark"></i> Fermer le menu</a></li>
+            </ul>
+        </div>
+        <script src="js/script.js"></script>
+    </header>
+
+    <div class="sommaire">
+        <div class="sommaire-toggle">☰ Sommaire</div>
+        <ul>
+            <li><a href="#definition">Qu'est-ce qu'un mot de passe ?</a></li>
+            <li><a href="#bonnes-pratiques">Bonnes pratiques pour créer un mot de passe sécurisé</a></li>
+            <li><a href="#risques">Risques associés à des mots de passe faibles</a></li>
+            <li><a href="#stockage">Stockage des mots de passe</a></li>
+            <li><a href="#alternatives">Alternatives et compléments aux mots de passe</a></li>
+            <li><a href="#entreprises">Conseils pour les entreprises</a></li>
+            <li><a href="#tendances">Tendances futures</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section>
+            <article id="definition">
+                <h2>Qu'est-ce qu'un mot de passe&nbsp;<i class="fa-solid fa-globe"></i></h2>
+                <p>Un mot de passe est une chaîne de caractères utilisée pour authentifier un utilisateur et garantir l'accès à des ressources informatiques.</p>
+                <span id="bonnes-pratiques">
+                    <h3>Bonnes pratiques pour créer un mot de passe sécurisé</h3>
+                    <ol>
+                        <li><strong>Long</strong> : Au moins 12 à 16 caractères pour une sécurité optimale.</li>
+                        <li><strong>Complexe</strong> : Inclure des lettres majuscules, minuscules, chiffres et symboles.</li>
+                        <li><strong>Unique</strong> : Ne jamais réutiliser un mot de passe pour plusieurs comptes.</li>
+                        <li><strong>Imprévisible</strong> : Éviter les mots simples ou informations personnelles. <br> Exemple : <code>D&3xP%gM7!Kp@1w</code></li>
+                    </ol>
+                    <a href="/services.html" class="needtoknow">Ou essayez-vous même &nbsp;<i class="fa-solid fa-toolbox"></i></a>
+                </span>
+            </article>
+
+            <article id="risques">
+                <h2>Risques associés à des mots de passe faibles&nbsp;<i class="fa-solid fa-thumbs-down"></i></h2>
+                <ol>
+                    <li>Attaques par force brute : les attaquants essaient toutes les combinaisons possibles.</li>
+                    <li>Phishing : tromperie pour obtenir vos mots de passe.</li>
+                    <li>Attaques par dictionnaire : utilisation de mots courants.</li>
+                    <li>Fuites de bases de données : compromission de mots de passe stockés.</li>
+                </ol>
+                <span id="stockage">
+                    <h2>Stockage des mots de passe</h2>
+                    <ol>
+                        <li><strong>Hachage</strong> : Transformation en empreinte numérique unique (ex. bcrypt, SHA-256).</li>
+                        <li><strong>Salage</strong> : Ajouter une chaîne aléatoire unique avant le hachage.</li>
+                    </ol>
+                    <a href="https://fr.wikipedia.org/wiki/Mot_de_passe" class="needtoknow">En savoir plus <i class="fa-solid fa-book"></i></a>
+                </span>
+            </article>
+
+            <article id="alternatives">
+                <h2>Alternatives aux mots de passe&nbsp;<i class="fa-solid fa-thumbs-up"></i></h2>
+                <ol>
+                    <li><strong>Authentification à deux facteurs (2FA)</strong> : Combinaison de mot de passe et code additionnel.</li>
+                    <li><strong>Biométrie</strong> : Empreintes digitales ou reconnaissance faciale.</li>
+                    <li>
+                        <strong>Gestionnaires de mots de passe</strong> : Stockage et génération (ex. LastPass, Bitwarden). <br>
+                        <img src="https://akril.net/wp-content/uploads/2023/08/image-50-1024x538.png" alt="Gestionnaire 1" style="max-width:40%;">
+                        <img src="https://korben.info/nordpass/gestionnaire-nordpass.webp" alt="NordPass" style="max-width:40%;">
+                    </li>
+                </ol>
+            </article>
+
+            <article id="entreprises">
+                <h2>Conseils pour les entreprises</h2>
+                <ol>
+                    <li>Imposer des règles de complexité et de renouvellement.</li>
+                    <li>Désactiver les comptes inactifs.</li>
+                    <li>Surveiller les tentatives de connexion suspectes.</li>
+                    <li>Utiliser des solutions de Single Sign-On (SSO).</li>
+                </ol>
+            </article>
+
+            <article id="tendances">
+                <h2>Tendances futures&nbsp;<i class="fa-solid fa-key"></i></h2>
+                <ol>
+                    <li><strong>Authentification sans mot de passe</strong> : Clés physiques comme YubiKey.</li>
+                    <li><strong>Cryptage homomorphe</strong> : Protection renforcée des données.</li>
+                    <li>
+                        <strong>Conclusion</strong> : Les mots de passe restent essentiels, mais doivent être complétés par d'autres solutions. <br>
+                    </li>
+                    <li>
+                        <h4>Exemple de YubiKey</h4>
+                    </li>
+                </ol>
+                <img src="https://www.yubico.com/wp-content/uploads/2022/09/YubiKey-5-family-new-photos-web@2x.png" alt="YubiKey" style="max-width:50%; position: relative; left: 25%;">
+                <iframe src="https://www.youtube.com/embed/sG9LtCBQWs8" style="aspect-ratio: 16/9; width: 100%;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Créé par Thomas 🐛 &nbsp; <a href="https://github.com/fuzeblocks/" target="_blank" class="social-icon"><i class="fa-brands fa-github" style="color: white;"></i></a></h3>
+    </footer>
+
+    <script>
+        const sommaireToggle = document.querySelector('.sommaire-toggle');
+        const sommaire = document.querySelector('.sommaire');
+
+        sommaireToggle.addEventListener('click', () => {
+            sommaire.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
