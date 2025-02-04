@@ -11,10 +11,10 @@
 <body>
     <header>
         <nav>
-            <img src="https://em-content.zobj.net/source/emoji-one/72/bug_1f41b.png" class="logo" alt="Logo">
+            <img src="https://em-content.zobj.net/source/emoji-one/72/bug_1f41b.png" class="logo" alt="Un logo de chenille">
             <h1>Les mots de passe en informatique</h1>
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#" class="navPage"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li><a href="/services.html"><i class="fa-solid fa-paperclip"></i> Services</a></li>
                 <li><a href="/contact.html"><i class="fa-solid fa-envelope"></i> Contactez-nous</a></li>
             </ul>
@@ -26,7 +26,7 @@
         </nav>
         <div class="menubar">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#"  class="navPage"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li><a href="/services.html"><i class="fa-solid fa-paperclip"></i> Services</a></li>
                 <li><a href="/contact.html"><i class="fa-solid fa-envelope"></i> Contactez-nous</a></li>
                 <li><a class="close"><i class="fa-solid fa-circle-xmark"></i> Fermer le menu</a></li>
@@ -53,7 +53,7 @@
             <article id="definition">
                 <h2>Qu'est-ce qu'un mot de passe&nbsp;<i class="fa-solid fa-globe"></i></h2>
                 <p>Un mot de passe est une chaîne de caractères utilisée pour authentifier un utilisateur et garantir l'accès à des ressources informatiques.</p>
-                <span id="bonnes-pratiques">
+                <div id="bonnes-pratiques">
                     <h3>Bonnes pratiques pour créer un mot de passe sécurisé</h3>
                     <ol>
                         <li><strong>Long</strong> : Au moins 12 à 16 caractères pour une sécurité optimale.</li>
@@ -62,7 +62,7 @@
                         <li><strong>Imprévisible</strong> : Éviter les mots simples ou informations personnelles. <br> Exemple : <code>D&3xP%gM7!Kp@1w</code></li>
                     </ol>
                     <a href="/services.html" class="needtoknow">Ou essayez-vous même &nbsp;<i class="fa-solid fa-toolbox"></i></a>
-                </span>
+                </div>
             </article>
 
             <article id="risques">
@@ -73,14 +73,15 @@
                     <li>Attaques par dictionnaire : utilisation de mots courants.</li>
                     <li>Fuites de bases de données : compromission de mots de passe stockés.</li>
                 </ol>
-                <span id="stockage">
+                <div id="stockage">
                     <h2>Stockage des mots de passe</h2>
+                    <p>Les mots de passe doivent être stockés de manière sécurisée :</p>
                     <ol>
                         <li><strong>Hachage</strong> : Transformation en empreinte numérique unique (ex. bcrypt, SHA-256).</li>
                         <li><strong>Salage</strong> : Ajouter une chaîne aléatoire unique avant le hachage.</li>
                     </ol>
                     <a href="https://fr.wikipedia.org/wiki/Mot_de_passe" class="needtoknow">En savoir plus <i class="fa-solid fa-book"></i></a>
-                </span>
+                </div>
             </article>
 
             <article id="alternatives">
@@ -90,10 +91,12 @@
                     <li><strong>Biométrie</strong> : Empreintes digitales ou reconnaissance faciale.</li>
                     <li>
                         <strong>Gestionnaires de mots de passe</strong> : Stockage et génération (ex. LastPass, Bitwarden). <br>
-                        <img src="https://akril.net/wp-content/uploads/2023/08/image-50-1024x538.png" alt="Gestionnaire 1" style="max-width:40%;">
-                        <img src="https://korben.info/nordpass/gestionnaire-nordpass.webp" alt="NordPass" style="max-width:40%;">
                     </li>
                 </ol>
+                <div class="password-manager-img">
+                    <img src="https://akril.net/wp-content/uploads/2023/08/image-50-1024x538.png" alt="Gestionnaire 1">
+                    <img src="https://korben.info/nordpass/gestionnaire-nordpass.webp" alt="NordPass">
+                </div>
             </article>
 
             <article id="entreprises">
@@ -119,8 +122,16 @@
                     </li>
                 </ol>
                 <img src="https://www.yubico.com/wp-content/uploads/2022/09/YubiKey-5-family-new-photos-web@2x.png" alt="YubiKey" style="max-width:50%; position: relative; left: 25%;">
-                <iframe src="https://www.youtube.com/embed/sG9LtCBQWs8" style="aspect-ratio: 16/9; width: 100%;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
+             </article>
+             <article>
+                <h2>
+                    Voici une vidéo qui résume cet article <i class="fa-brands fa-youtube"></i>
+                </h2>
+                <div style="text-align: center;">
+                    <iframe src="https://www.youtube.com/embed/sG9LtCBQWs8" style="aspect-ratio: 16/9; width: 80%; color: transparent;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                </article>
         </section>
     </main>
 
